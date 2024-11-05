@@ -1,2 +1,2 @@
 def b():
-    return 913256
+    return 2
