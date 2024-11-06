@@ -1,2 +1,2 @@
 import geheim
-geheim.key()
+print(geheim.key())
