@@ -10,7 +10,7 @@ completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=[{
       "role": "system",
-      "content": '''Noem de 5 beroemdste inwoners van : '''+invoer+''''''
+      "content": '''Noem de 5 beroemdste inwoners van : '''+invoer+''', en vertel er in het kort iets over.'''
     }],
     temperature=0.8,
     max_completion_tokens=1024
