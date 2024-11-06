@@ -14,7 +14,7 @@ completion = client.chat.completions.create(
       "role": "system",
       "content": '''JE BENT ONDERDEEL VAN EEN SYSTEEM: maak een object met verschillende properties over: 
         '''+invoer+''' 
-        IK WIL UITSLUITEND JSON. GEEN INTRO. GEEN UITRO.'''
+        IK WIL UITSLUITEND XML. GEEN INTRO. GEEN UITRO.'''
     #   "content": ''''''+invoer+''''''
     }],
     temperature=0.8,
