@@ -5,12 +5,12 @@ import geheim
 
 from openai import OpenAI
 client = OpenAI(api_key=geheim.key())
-invoer = input("stel een vraag? ")
+invoer = input("noem een stad? ")
 completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=[{
       "role": "system",
-      "content": ''''''+invoer+''''''
+      "content": '''Noem de 5 beroemdste inwoners van : '''+invoer+''''''
     }],
     temperature=0.8,
     max_completion_tokens=1024
