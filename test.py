@@ -5,26 +5,17 @@ import geheim
 
 from openai import OpenAI
 client = OpenAI(api_key=geheim.key())
-
-invoer = input("kies een onderwerp? ")
-
-completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
+invoer = input("Stel hier uw vraag? ")
+response = client.chat.completions.create(
+  model="gpt-4",
   messages=[{
       "role": "system",
-      "content": '''JE BENT ONDERDEEL VAN EEN SYSTEEM: maak een object met verschillende properties over: 
-        '''+invoer+''' 
-        IK WIL UITSLUITEND JSON. GEEN INTRO. GEEN UITRO.'''
-    #   "content": ''''''+invoer+''''''
+      "content": ""+invoer
     }],
-    temperature=0.8,
-    max_completion_tokens=1024
+    temperature=0.5,
+    max_tokens=2024,
+    stream=True
 )
 
-print(completion)
-# print(completion.choices[0].message.content)
-
-tekst = completion.choices[0].message.content
-bestandsnaam = "voorbeeld.html"
-with open(bestandsnaam, "w") as bestand:
-    bestand.write(tekst)
+for chunk in response:
+    print(chunk.choices[0].delta.content, end="", flush=True)
