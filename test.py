@@ -6,22 +6,25 @@ import geheim
 from openai import OpenAI
 client = OpenAI(api_key=geheim.key())
 
-# Laad het bestand in als tekst (bijvoorbeeld JSON of tekst)
-with open("films.csv", "r") as file:
-    file_content = file.read()
+invoer = input("kies een onderwerp? ")
 
-# Stel de vraag met de inhoud van het bestand als context
-vraag = input("stel een vraag over het bestand: ")
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[
-        {"role": "system", "content": "Dit is de inhoud van het bestand: " + file_content},
-        {"role": "user", "content": vraag}
-    ],
-    temperature=0.7,
-    max_tokens=3200
+completion = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[{
+      "role": "system",
+      "content": '''JE BENT ONDERDEEL VAN EEN SYSTEEM: maak een website met informatie over: 
+        '''+invoer+''' 
+        IK WIL UITSLUITEND HTML. GEEN INTRO. GEEN UITRO. maak het mooi met css in vrolijke kleuren.'''
+    #   "content": ''''''+invoer+''''''
+    }],
+    temperature=0.8,
+    max_completion_tokens=1024
 )
 
-# Print het antwoord van de API
-#print(response)
-print(response.choices[0].message.content)
+print(completion)
+# print(completion.choices[0].message.content)
+
+tekst = completion.choices[0].message.content
+bestandsnaam = "voorbeeld.html"
+with open(bestandsnaam, "w") as bestand:
+    bestand.write(tekst)
