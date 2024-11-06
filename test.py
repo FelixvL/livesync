@@ -12,7 +12,7 @@ completion = client.chat.completions.create(
       "role": "system",
       "content": '''Noem de 5 beroemdste inwoners van : '''+invoer+''', en vertel er in het kort iets over.'''
     }],
-    temperature=1.8,
+    temperature=0.8,
     max_completion_tokens=6
 )
 
