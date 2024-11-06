@@ -23,5 +23,5 @@ response = client.chat.completions.create(
 )
 
 # Print het antwoord van de API
-print(response)
+#print(response)
 print(response.choices[0].message.content)
