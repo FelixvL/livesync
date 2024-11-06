@@ -10,7 +10,7 @@ completion = client.chat.completions.create(
   model="gpt-4",
   messages=[{
       "role": "system",
-      "content": '''Noem de 5 beroemdste inwoners van : '''+invoer+''', en vertel er in het kort iets over.'''
+      "content": '''Ik heet Felix en spreek mij formeel aan. Noem de 5 beroemdste inwoners van : '''+invoer+''', en vertel er in het kort iets over.Ik wil de tekst in het Italiaans'''
     }],
     temperature=0.8,
     max_completion_tokens=600
