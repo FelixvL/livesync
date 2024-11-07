@@ -2,10 +2,11 @@
     let lijst = [24, 12, 13, 33, 55, 16];
 
     lijst.reduce(kijkmaar);
-
+    document.getElementById("morgen");
     function kijkmaar(totaal, volgendeitem){
         console.log("totaal: ", totaal);
         console.log("vitem: ", volgendeitem);
         return totaal + volgendeitem;
     }
 </script>
+<div id="morgen"></div>
