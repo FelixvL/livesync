@@ -1,15 +1,22 @@
 
 <script>
-    window.onload = function(){
-        let lijst = [24, 12, 13, 33, 55, 16];
+    let lijst = [24, 12, 13, 33, 55, 16];
         
-        lijst.reduce(kijkmaar);
-        document.getElementById("morgen").innerHTML;
-    }
+    lijst.reduce(kijkmaar);
+    lijst.reduce(function (totaal, vi){
+        console.log("|||totaal: ", totaal);
+        console.log("|||vitem: ", volgendeitem);
+        return totaal + vi;
+    })
+    lijst.reduce((totaal, vi) =>{
+        console.log("===totaal: ", totaal);
+        console.log("===vitem: ", volgendeitem);
+        return totaal + vi;
+    })
     function kijkmaar(totaal, volgendeitem){
         console.log("totaal: ", totaal);
         console.log("vitem: ", volgendeitem);
         return totaal + volgendeitem;
     }
 </script>
-    <div id="morgen"></div>
+
