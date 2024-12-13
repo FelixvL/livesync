@@ -33,6 +33,7 @@
             if( lijstje[i] > 10   ){
                 console.log("YES");
                 totaal ++;
+                document.getElementById("hogegetallen").innerHTML += lijstje[i];
             }
         }
         alert("totaal is "+totaal)
@@ -54,7 +55,9 @@
     }
 </script>
 
+<div id="hogegetallen"></div>
 <input>
+
 <button onclick="startfunctie()" id="onzeknop">Klik hier</button>
 
 <div id="mijndiv">hallo</div>
