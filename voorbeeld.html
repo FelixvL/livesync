@@ -1,5 +1,7 @@
 <script>
     function startfunctie(){
+        let deDOM = document.getElementsByTagName("html");
+        console.log(deDOM);
         console.log("nieuw")
 
         // DOM manipulatie
@@ -8,7 +10,7 @@
         let ding = document.getElementById("mijndiv2");
         ding.innerHTML = "ken net";
         ding.style.backgroundColor = 'red';
-        
+
         document.getElementById("mijndiv").style.backgroundColor = 'green';
     }
 </script>
