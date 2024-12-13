@@ -2,3 +2,5 @@
 __pycache__/**
 geheim.py
 *.mp3
+*.png
+*.jpg

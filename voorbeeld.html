@@ -8,7 +8,7 @@
     }
 </style>
 <script>
-    let fotos = ["piet","joost","karel"]
+    let fotos =      ["felix","felix2","felix3","felix","felix2","felix3"]
     let werknemers = ["Johan", "Lutsen", "Felix", "Runa", "Raimond", "Jelly"];
     let loon =       [ 1000 ,    1200,     900,    1300,     1700,      5   ];
 
@@ -16,8 +16,9 @@
         //document.getElementById("werknemeroverzicht").innerHTML = werknemers;
         for(i = 0; i < 6; i++ ){
             document.getElementById("werknemeroverzicht").innerHTML += 
-            `
-            <div class="wn">${werknemers[i]} - verdient:
+            `   
+
+            <div class="wn"><img src="${fotos[i]}.png" width="40px">${werknemers[i]} - verdient:
             ${loon[i]} Euro</div><br>`
         }
     }
