@@ -20,15 +20,19 @@
         // Array  lijst rijtje  herkent m altijd   [ ]  blokhaken square brackets
                     //  0   1   2   3   4   geteld als computer
                     //  1   2   3   4   5   geteld als mens
-        let lijstje = [ 5 ,4 , 12, 17 , 77, 82 , 3, 12 ];
+        let lijstje = [ 5 ,4 , 9, 17 , 77, 82 , 3, 12 ];
 
         console.log( lijstje[3]    );
         console.log( lijstje.length );
 
         // gelukkig huwelijk    array en for-loop
+        let totaal = 0;
 
         for( let i = 0 ; i < lijstje.length ; i++){
             console.log("-- i :"+ lijstje[i]);
+            if( lijstje[i] > 10   ){
+                console.log("YES")
+            }
         }
 
 
