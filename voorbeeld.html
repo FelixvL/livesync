@@ -14,11 +14,16 @@
         document.getElementById("mijndiv").style.backgroundColor = 'green';
         console.log(ding.clientWidth)
         ding.hidden = true;
+
+        document.getElementById("onzeknop").onclick = andere;
+    }
+    function andere(){
+        alert("dit is de andere")
     }
 </script>
 
 <input>
-<button onclick="startfunctie()">Klik hier</button>
+<button onclick="startfunctie()" id="onzeknop">Klik hier</button>
 
 <div id="mijndiv">hallo</div>
 <div id="mijndiv2">hallo2</div>
