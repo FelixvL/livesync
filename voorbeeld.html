@@ -18,11 +18,18 @@
             document.getElementById("werknemeroverzicht").innerHTML += 
             `   
 
-            <div class="wn"><img src="${fotos[i]}.png" width="40px">${werknemers[i]} - verdient:
-            ${loon[i]} Euro</div><br>`
+            <div class="wn">
+                <img src="${fotos[i]}.png" width="40px">
+                ${werknemers[i]} - verdient:
+                ${loon[i]} Euro
+            </div>
+            <br>`
         }
     }
 </script>
+Toevoegen:
+<input>
+<button>voeg toe</button>
+<hr>
 <button onclick="zieiedereen()">Zie werknemers!</button>
-
 <div id="werknemeroverzicht"></div>
