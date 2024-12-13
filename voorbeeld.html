@@ -15,10 +15,14 @@
         console.log(ding.clientWidth)
         ding.hidden = true;
 
-        document.getElementById("onzeknop").onclick = andere;
+        document.getElementById("onzeknop").onclick = andere; // ZONDER HAAKJES
     }
     function andere(){
         alert("dit is de andere")
+        return derde;
+    }
+    function derde(){
+        alert("dit is de derde")
     }
 </script>
 
