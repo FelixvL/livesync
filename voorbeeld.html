@@ -1,3 +1,9 @@
+<style>
+    .wn{
+        padding:20px;
+        border:2px dashed salmon;
+    }
+</style>
 <script>
     let werknemers = ["Johan", "Lutsen", "Felix", "Runa", "Raimond", "Jelly"];
     let loon =       [ 1000 ,    1200,     900,    1300,     1700,      5   ];
@@ -6,8 +12,9 @@
         //document.getElementById("werknemeroverzicht").innerHTML = werknemers;
         for(i = 0; i < 6; i++ ){
             document.getElementById("werknemeroverzicht").innerHTML += 
-            `${werknemers[i]} - verdient:
-            ${loon[i]} Euro<br>`
+            `
+            <div class="wn">${werknemers[i]} - verdient:
+            ${loon[i]} Euro</div>`
         }
     }
 </script>
