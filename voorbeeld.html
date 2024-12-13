@@ -4,6 +4,9 @@
 
     function zieiedereen(){
         document.getElementById("werknemeroverzicht").innerHTML = werknemers;
+        for(i = 0; i < 10; i++ ){
+            document.getElementById("werknemersoverzicht").innerHTML = werknemers + " - "
+        }
     }
 </script>
 <button onclick="zieiedereen()">Zie werknemers!</button>
