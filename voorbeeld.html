@@ -2,9 +2,10 @@ Woordenkiezer
 
 <script>
     fetch("woorden.txt")
-    .then(  e => console.log(e)           )
+    .then(  e => e.text()   )
+    .then(  f => console.log(f) )
 
-function go(){
-
+function go(a){
+    console.log(a);
 }
 </script>
