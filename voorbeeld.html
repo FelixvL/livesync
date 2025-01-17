@@ -10,6 +10,9 @@ function verwerkgegevens(gegevens){
     console.log(gegevens);
     let lijstwoorden = gegevens.split("\n");
     console.log(lijstwoorden);
+    let arrayindex = Math.floor(Math.random() * lijstwoorden.length);
+    let eenwoord = lijstwoorden[arrayindex];
+    console.log(eenwoord);
 }
 
 
