@@ -1,7 +1,7 @@
 <script>
     fetch("https://catfact.ninja/fact")
     .then( e => e.json())
-    .then( f => console.log(f))
+    .then( f => verwerkendata(f))
 
 
 function verwerkendata(data){
