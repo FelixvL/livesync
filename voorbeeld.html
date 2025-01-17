@@ -3,7 +3,12 @@ Woordenkiezer
 <script>
     fetch("woorden.txt")
     .then(  e => e.text()   )
-    .then(  f => console.log(f) )
+    .then(  f => (f) )
+
+function verwerkgegevens(gegevens){
+    console.log(gegevens);
+}
+
 
 function go(a){
     console.log(a);
