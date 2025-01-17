@@ -1,10 +1,11 @@
 <script>
-    fetch("https://catfact.ninja/facts")
+    fetch("https://catfact.ninja/facts")  // zonder s
     .then( e => e.json())
     .then( f => verwerkendata(f))
 
 
 function verwerkendata(data){
+    // document.getElementById("letsgo").innerHTML = data.fact; // zonder s
     document.getElementById("letsgo").innerHTML = data.fact;
 }
 </script>
