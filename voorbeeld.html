@@ -1,4 +1,17 @@
 Woordenkiezer
+//ASYNCHRONITEIT   ASYNCHROON - niet afgestemd op elkaar
+
+// synchroon - na elkaar        (synchroon zwemmen)
+// asynchroon - tegelijkertijd paralell
+
+
+// 2 mensen  (cores meerdere computers) lutsen raimond
+// 2 taken   gras maaien     afwas doen
+
+// synchroon   lutsen gras maaien   NADAT    raimond afwas doen duur zoland als de taken bij elkaar opgeteld
+// asynchrooon lutsen gras maaien  TIJDENS raimon afwas doen  duurt zolang als de langste taak
+
+// callback   --> taak die je moet doen nadat je klaar ben
 
 <script>
 let mijngekozenwoord;
@@ -7,15 +20,15 @@ function start(){
     .then(  e => e.text()   )
     .then(  f => verwerkgegevens(f) )
 
-    doeiets();
 }
 function verwerkgegevens(gegevens){
     console.log(gegevens);
     let lijstwoorden = gegevens.split("\n");
     console.log(lijstwoorden);
     let arrayindex = Math.floor(Math.random() * lijstwoorden.length);
-    let eenwoord = lijstwoorden[arrayindex];
+    mijngekozenwoord = lijstwoorden[arrayindex];
     console.log(eenwoord);
+    doeiets(); // wth
 }
 function doeiets(){
     console.log("verder met: ", mijngekozenwoord)
