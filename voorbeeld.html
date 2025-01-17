@@ -6,6 +6,8 @@ function start(){
     fetch("woorden.txt")
     .then(  e => e.text()   )
     .then(  f => verwerkgegevens(f) )
+
+    doeiets();
 }
 function verwerkgegevens(gegevens){
     console.log(gegevens);
