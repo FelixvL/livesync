@@ -1,6 +1,7 @@
 Woordenkiezer
 
 <script>
+let mijngekozenwoord;
 function start(){
     fetch("woorden.txt")
     .then(  e => e.text()   )
@@ -13,6 +14,9 @@ function verwerkgegevens(gegevens){
     let arrayindex = Math.floor(Math.random() * lijstwoorden.length);
     let eenwoord = lijstwoorden[arrayindex];
     console.log(eenwoord);
+}
+function doeiets(){
+    console.log("verder met: ", gekozenwoord)
 }
 
 
