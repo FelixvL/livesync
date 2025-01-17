@@ -3,4 +3,10 @@
     .then( e => e.json())
     .then( f => console.log(f))
 
+
+function verwerkendata(data){
+    document.getElementById("letsgo").innerHTML = data.fact;
+}
 </script>
+
+<div id="letsgo">x</div>
