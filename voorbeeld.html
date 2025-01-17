@@ -20,11 +20,11 @@ function randombootplaatsen(){
     let tellervoorboot = zee.length - 2;
     let randomgetalrij = Math.floor(Math.random() * 4)
     let randomgetal = 1;
-    zee[randomgetal] = 1;
+    zee[randomgetalrij][randomgetal] = 1;
     randomgetal++;
-    zee[randomgetal] = 1;
+    zee[randomgetalrij][randomgetal] = 1;
     randomgetal++;
-    zee[randomgetal] = 1;
+    zee[randomgetalrij][randomgetal] = 1;
 	toonzee();
 }
 function toonzee(){ // View
