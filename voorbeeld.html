@@ -1,16 +1,14 @@
 Woordenkiezer
 
 <script>
+function start(){
     fetch("woorden.txt")
     .then(  e => e.text()   )
-    .then(  f => (f) )
-
+    .then(  f => verwerkgegevens(f) )
+}
 function verwerkgegevens(gegevens){
     console.log(gegevens);
 }
+window.onload = start;
 
-
-function go(a){
-    console.log(a);
-}
 </script>
