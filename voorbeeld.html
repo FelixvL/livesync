@@ -18,6 +18,7 @@ let zee = [
 
 function randombootplaatsen(){
     let tellervoorboot = zee.length - 2;
+    let randomgetalrij = Math.floor(Math.random() * 4)
     let randomgetal = Math.floor(Math.random() * tellervoorboot);
     zee[randomgetal] = 1;
     randomgetal++;
