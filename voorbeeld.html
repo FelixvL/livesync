@@ -1,41 +1,26 @@
-<style>
-    .wn{
-        padding:20px;
-        border:2px dashed salmon;
-        display: inline-block;
-        margin: 5px;
-        border-radius: 5px;
-    }
-</style>
+zeeslag
+
 <script>
-    let fotos =      ["felix", "felix2","felix3","felix", "felix2", "felix3"];
-    let werknemers = ["Johan", "Lutsen", "Felix", "Runa", "Raimond", "Jelly"];
-    let loon =       [ 1000  ,    1200 ,     900,    1300,     1700,      5   ];
+let zee = [0,0,1,1,1,0,0,0,0,0];  // Model
+function randombootplaatsen(){
+	toonzee()
+}
+function toonzee(){ // View
+	let eindstring = "<div id=hetbord>";
+	for(let x = 0; x < zee.length; x++){
+		if(zee[x] === 1){
+			eindstring += `<div class="zeekleur">x</div>`
+		}else{
+			eindstring += `<div class="boot1kleur">y</div>`
+		}
+	}
+	eindstring += "</div>";
+	console.log(eindstring);
+	document.getElementById("zeediv").innerHTML = eindstring;
+}
 
-    function zieiedereen(){
-        //document.getElementById("werknemeroverzicht").innerHTML = werknemers;
-        for(i = 0; i < werknemers.length; i++ ){
-            document.getElementById("werknemeroverzicht").innerHTML += 
-            `   
+window.onload = randombootplaatsen;
 
-            <div class="wn">
-                <img src="${fotos[i]}.png" width="40px">
-                ${werknemers[i]} - verdient:
-                ${loon[i]} Euro
-            </div>
-            <br>`
-        }
-    }
-    function toevoegen(){
-        console.log("toevoegen");
-        
-        werknemers.push( document.getElementById("nieuwewn").value )
-        console.log( werknemers  )
-    }
 </script>
-Toevoegen:
-<input id="nieuwewn">
-<button onclick="toevoegen()">voeg toe</button>
-<hr>
-<button onclick="zieiedereen()">Zie werknemers!</button>
-<div id="werknemeroverzicht"></div>
+
+<div id="zeediv"></div>
