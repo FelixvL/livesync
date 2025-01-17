@@ -3,10 +3,8 @@ zeeslag
 <script>
 let zee = [0,0,0,0,0,0,0,0,0,0];  // Model
 function randombootplaatsen(){
-    console.log("yes");
     let tellervoorboot = zee.length - 2;
     let randomgetal = Math.floor(Math.random() * tellervoorboot);
-    console.log(randomgetal);
     zee[randomgetal] = 1;
     randomgetal++;
     zee[randomgetal] = 1;
@@ -24,7 +22,6 @@ function toonzee(){ // View
 		}
 	}
 	eindstring += "</div>";
-	console.log(eindstring);
 	document.getElementById("zeediv").innerHTML = eindstring;
 }
 
