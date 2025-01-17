@@ -17,7 +17,7 @@ Woordenkiezer
 let mijngekozenwoord;
 function start(){
     fetch("woorden.txt")
-    .then(  function (something) { return something.text(); }   )
+    .then(   e => e.text()   )
     .then(  f => verwerkgegevens(f) )
     
 }
@@ -39,9 +39,12 @@ function uitproberen(iets){   // normale functie
 }
 
 // anonieme functie
-//function(){
-//    return "go";
+//function(iets){
+//    return iets.text();
 //}
+
+// lambda expressie of arrow function
+//    e => e.text()
 window.onload = start;
 
 </script>
