@@ -18,15 +18,27 @@ console.log( zee[0][0] );
 
 
 function randombootplaatsen(){
+    let horizonofverticaal = 0;
     let tellervoorboot = zee.length - 2;
     let randomgetalrij = Math.floor(Math.random() * tellervoorboot)
     let randomgetal = Math.floor(Math.random() * tellervoorboot)
     zee[randomgetalrij][randomgetal] = 1;
-    randomgetalrij++;// DEZE DAN UIT
-    //randomgetal++; // DEZE AANZETTEN VOOR HORIZONTAAL
+    if(horizonofverticaal == 0){
+
+        randomgetalrij++;// DEZE DAN UIT
+    }else{
+
+        randomgetal++; // DEZE AANZETTEN VOOR HORIZONTAAL
+    }
     zee[randomgetalrij][randomgetal] = 1;
-    randomgetalrij++; // DEZE DAN UIT
-    //randomgetal++; // DEZE AANZETTEN VOOR HORIZONTAAL
+    if(horizonofverticaal == 0){
+
+        randomgetalrij++;// DEZE DAN UIT
+    }else{
+
+        randomgetal++; // DEZE AANZETTEN VOOR HORIZONTAAL
+    }
+//randomgetal++; // DEZE AANZETTEN VOOR HORIZONTAAL
     zee[randomgetalrij][randomgetal] = 1;
 	toonzee();
 }
