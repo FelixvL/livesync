@@ -7,8 +7,8 @@ zeeslag
 </style>
 <script>
 let zee = [
-[0,1,0,0],
-[0,1,0,0],
+[0,0,0,0],
+[0,0,0,0],
 [0,0,0,0],
 [0,0,0,0],
 ];  // Model
@@ -19,7 +19,7 @@ let zee = [
 function randombootplaatsen(){
     let tellervoorboot = zee.length - 2;
     let randomgetalrij = Math.floor(Math.random() * 4)
-    let randomgetal = 1;
+    let randomgetal = 0;
     zee[randomgetalrij][randomgetal] = 1;
     randomgetal++;
     zee[randomgetalrij][randomgetal] = 1;
