@@ -7,6 +7,7 @@ function randombootplaatsen(){
     let tellervoorboot = zee.length - 2;
     let randomgetal = Math.floor(Math.random() * tellervoorboot);
     console.log(randomgetal);
+    zee[randomgetal] = 1;
 	toonzee();
 }
 function toonzee(){ // View
