@@ -19,6 +19,7 @@ function start(){
     fetch("woorden.txt")
     .then(  e => e.text()   )
     .then(  f => verwerkgegevens(f) )
+    doeiets(); // wth
 
 }
 function verwerkgegevens(gegevens){
@@ -28,7 +29,6 @@ function verwerkgegevens(gegevens){
     let arrayindex = Math.floor(Math.random() * lijstwoorden.length);
     mijngekozenwoord = lijstwoorden[arrayindex];
     console.log(mijngekozenwoord);
-    doeiets(); // wth
 }
 function doeiets(){
     console.log("verder met: ", mijngekozenwoord)
