@@ -17,7 +17,7 @@ Woordenkiezer
 let mijngekozenwoord;
 function start(){
     fetch("woorden.txt")
-    .then(  uitproberen   )
+    .then(  function (something) { return something.text(); }   )
     .then(  f => verwerkgegevens(f) )
     
 }
@@ -34,11 +34,14 @@ function doeiets(){
     console.log("verder met: ", mijngekozenwoord)
 }
 
-function uitproberen(iets){
+function uitproberen(iets){   // normale functie
     return iets.text();
 }
 
-
+// anonieme functie
+//function(){
+//    return "go";
+//}
 window.onload = start;
 
 </script>
