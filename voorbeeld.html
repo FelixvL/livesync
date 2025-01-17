@@ -5,7 +5,12 @@ zeeslag
     }
 </style>
 <script>
-let zee = [0,0,0,0,0,0,0,0,0,0];  // Model
+let zee = [
+[0,0,0,0],
+[0,0,0,0],
+[0,0,0,0],
+[0,0,0,0],
+];  // Model
 
 
 
@@ -21,19 +26,22 @@ function randombootplaatsen(){
 	toonzee();
 }
 function toonzee(){ // View
-	let eindstring = "<div id=hetbord>";
+	let eindstring = "<div id=hetbord><br>";
 	for(let x = 0; x < zee.length; x++){
-		if(zee[x] === 1){
-			eindstring += `<div class="zeekleur">x</div>`
-		}else{
-			eindstring += `<div class="boot1kleur">y</div>`
-		}
+        for(let y = 0; y < zee[x].length;y++){
+            if(zee[x][y] === 1){
+                eindstring += `<div class="zeekleur">x</div>`
+            }else{
+                eindstring += `<div class="boot1kleur">y</div>`
+            }
+        }
+        eindstring += `<br>`;
 	}
 	eindstring += "</div>";
 	document.getElementById("zeediv").innerHTML = eindstring;
 }
 
-window.onload = randombootplaatsen;
+window.onload = toonzee;
 
 </script>
 
