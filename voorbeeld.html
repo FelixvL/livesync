@@ -43,6 +43,7 @@
                 fetch("gerechten.txt")
                 .then( e => e.text() )
                 .then( f => etenverwerken(f))
+                console.log(2)
                 console.log(globaalding);
 //                .then( function (e){ console.log(e);})
   //              .then(doen)
@@ -56,6 +57,7 @@
             }
 
             function etenverwerken(eetlijstje){
+                console.log(1)
                 globaalding = eetlijstje;
                 // console.log(eetlijstje);
                 // let eetlijst = eetlijstje.split("\n");
