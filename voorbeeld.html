@@ -1,7 +1,18 @@
 <script>
+    // JSON      JavaScript Object Notatie   ==>  String
+    // Object    Object   levendigs in het RAM-geheugen, de onderdelen zijn 
+    //                      te bereiken via een .
+            //   (iedere programmeertaal slaat op zijn eigen manier een object op)
+    // Een object is onmogelijke om op te slaan, of m verzenden.
+    // byte[] characters.
+    //    Object    ->     String         Serialiseren    Stringifyen
+    //    String    ->     Object         Parsen
     let ditisjson = `{
                 "voornaam": "felix", 
                 "achternaam":   "van loenen", 
-                "hobbies":  ["eten","voetbal","wandelen"]}`
+                "hobbies":  ["eten","voetbal","wandelen"]
+            }`
+    let hetObject = JSON.parse(ditisjson);
     console.log(ditisjson.voornaam);
+    console.log(hetObject.voornaam);
 </script>
