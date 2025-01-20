@@ -1,54 +1,11 @@
-<!DOCTYPE html>
+<script>
+    function geefaanb(){
+        console.log("werkt");
+    }
+    function hijdoethet(){
+        alert("hij doet het");
+    }
+</script>
 
-
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="./bronbestanden/anderscript.js"></script>
-        <link href="./bronbestanden/mijnstyle.css" rel="stylesheet">
-        <script>
-            function hallo(){
-                // fietsKopen();
-                // fietsKopen().trappen();
-
-                // let fiets = fietsKopen();
-                // fiets.trappen();
-
-                // API
-
-                fetch("gerechten.txt").then();
-                let checkit = fetch("gerechten.txt");
-                console.log(checkit);
-                checkit.then(console.log("hier"));
-                            // aanroep call --> datgeen dat hij returned
-                let terug = doen(99);
-                console.log(terug)
-                doen(66);
-                let p = new Promise((resolve, reject) => {
-                    resolve("ga dit doen");
-                })
-                p.then(a => console.log(a))
-
-
-                fetch("https://catfact.ninja/fact")
-                .then(r => r.json())
-                .then(d => console.log(d.fact))
-            }
-
-
-                    // identifier van de functie
-                                // parameter
-            function doen(meegegeven){
-                return meegegeven * 94; // return type  hetgeen dat hij returned 
-            }
-        </script>
-    </head>
-    <body>
-        <input>
-        <button onclick="hallo()">Klik hier</button>
-        <div id="zelfkiezen">x</div>
-        <div id="teeten">e</div>
-    </body>
-</html>
+<button id="knopA" onclick="geefaanb()">Doet iets</button>
+<button id="knopB">Doet niks</button>
