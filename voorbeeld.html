@@ -4,9 +4,10 @@
     function doedit(){
         let stuktekst = document.getElementById("mijninvoer").value;
         stuktekst = parseInt(stuktekst);
-        document.getElementById("uitkomst").innerHTML = 100 / stuktekst; 
+        document.getElementById("uitkomst"+stuktekst).innerHTML = "vijfenzestig"; 
     }
 </script>
 <input id="mijninvoer">
 <button onclick="doedit()">doen</button>
-<div id="uitkomst"></div>
+<div id="uitkomst1"></div>
+<div id="uitkomst2"></div>
