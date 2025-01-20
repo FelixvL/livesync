@@ -9,6 +9,11 @@
         knopDrie.innerHTML = "klik hier";
         knopDrie.addEventListener('mouseover', hijdoethet);
         document.body.appendChild(knopDrie);
+
+        let alledivs = document.getElementsByTagName("div");
+        for(let x =0 ; x< alledivs.length ; x++){
+            alledivs[x].addEventListener('click', hijdoethet);
+        }
         
     }
     function hijdoethet(){
@@ -18,3 +23,4 @@
 
 <button id="knopA" onclick="geefaanb(this)">Doet iets</button>
 <button id="knopB">Doet niks</button>
+<div>x</div><div>x</div><div>x</div><div>x</div><div>x</div>
