@@ -13,7 +13,8 @@
                 let checkit = fetch("gerechten.txt");
                 console.log(checkit);
                 checkit.then(console.log("hier"));
-                doen(99);
+                let terug = doen(99);
+                console.log(terug)
                 doen(66);
             }
 
@@ -21,7 +22,7 @@
                     // identifier van de functie
                                 // parameter
             function doen(meegegeven){
-                return meegegeven * 94;
+                return meegegeven * 94; // return type  hetgeen dat hij returned 
             }
         </script>
     </head>
