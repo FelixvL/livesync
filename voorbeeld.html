@@ -6,6 +6,7 @@
         stuktekst = parseInt(stuktekst);
         try{
             document.getElementById("uitkomst"+stuktekst).innerHTML = "vijfenzestig"; 
+            vervolg();
         }catch(exception){
             console.log("er is iets mis gegaan");
             document.getElementById("uitkomst1").innerHTML = "dit nummer moet 1 of 2"
