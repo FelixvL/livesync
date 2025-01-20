@@ -3,7 +3,12 @@
         console.log("werkt");
         //typen
         let knopTwee = document.getElementById("knopB");
-        knopTwee.addEventListener('click', e => alert("hij werkt in arrow")); // function pointer
+        knopTwee.addEventListener('click', hijdoethet); // function pointer
+
+        let knopDrie = document.createElement("button");
+        knopDrie.innerHTML = "klik hier";
+        knopDrie.addEventListener('mouseover', hijdoethet);
+        document.body.appendChild(knopDrie);
         
     }
     function hijdoethet(){
