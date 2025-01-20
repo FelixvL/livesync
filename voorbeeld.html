@@ -13,11 +13,16 @@
                 "hobbies":  ["eten","voetbal","wandelen"]
             }`
     let hetObject = JSON.parse(ditisjson);
-    hetObject2 = ditisjson.json();
+    // hetObject2 = ditisjson.json(); // Dit kan alleen in een .then() van een fetch (die dus al asynchroon is)
     
     console.log(ditisjson.voornaam);
     console.log(hetObject.voornaam);
     console.log( hetObject.hobbies[2] )
     console.log("===");
     console.log(hetObject.voornaam);
+    let mijnobject = {};
+    mijnobject.voornaam = "fred";
+
+    console.log(mijnobject)
+
 </script>
