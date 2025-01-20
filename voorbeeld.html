@@ -44,7 +44,7 @@
         localStorage.setItem('lijst',JSON.stringify(lijstje));
     }
     function ladena(){
-        lijstje = localStorage.getItem('lijst');
+        lijstje = JSON.parse(localStorage.getItem('lijst'));
         alert(lijstje[3])
     }
 </script>
