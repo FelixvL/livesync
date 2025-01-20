@@ -40,10 +40,10 @@
     function laden(){
         getal = localStorage.getItem('naam');
     }
-    function slaop(){
+    function slaopa(){
         localStorage.setItem('lijst',lijstje);
     }
-    function laden(){
+    function ladena(){
         lijstje = localStorage.getItem('lijst');
         alert(lijstje[3])
     }
@@ -51,4 +51,6 @@
 <button onclick="telop()">optellen</button>
 <button onclick="slaop()">slaop</button>
 <button onclick="laden()">laden</button>
+<button onclick="slaopa()">slaop array</button>
+<button onclick="ladena()">laden array</button>
 <div id="uitslag"></div>
