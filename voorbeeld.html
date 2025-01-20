@@ -9,72 +9,9 @@
         <script src="./bronbestanden/anderscript.js"></script>
         <link href="./bronbestanden/mijnstyle.css" rel="stylesheet">
         <script>
-            let globaalding;
             function hallo(){
-                console.log("letsgo");
-                var stuktekst = "hoppakee";
-                let stuktekst2 = 'dit mag ook';
-                stuktekst = `let op \'Leon\' 
-                            ${stuktekst2}
-                
-                gaat dit uitvoeren
-                        ${34 + 25 * 4}
-                `;
-                // Hallo "goede morgen"
-                // <div onclick="maakgerecht('spaghetti')">
-                let a = "goede";
-                let b = "morgen";
-                console.log("Hallo \"" + a + " " + b + "\"!");
-                console.log(`Hallo "${a} ${b}"!`);
-                
-                document.getElementById("zelfkiezen").innerHTML = stuktekst;
-
-                let mijndiv =  document.createElement("div");
-                mijndiv.style.backgroundColor = "green";
-                mijndiv.innerHTML = stuktekst + "??";
-                document.body.appendChild(mijndiv);
-                    // taken 2mensen   tuin maaien afwassen
-                    // asynchroon    piet grasmaaien tijdens jan afwassen {klaar lengte langste taak}
-                    //  synchroon      piet grasmaain klaar is daarna ja afwassen {klaar lengte taken bij elkaar opgeteld}
-                    // 2 mensen 2 cores 2 computers
-                    // callback meegeven de taak als je klaar bent met je eerstre taak
-                // asynchroon - tegelijkertijd
-                // synchroon tot nu toe gedaan hebt , normaal - achter elkaar na elkaar
-                fetch("gerechten.txt")
-                .then( e => e.text() )
-                .then( f => etenverwerken(f))
-                console.log(globaalding) // WERKT NIET
-                // ALLEMAAL FOUTEN
-//                .then( function (e){ console.log(e);})
-  //              .then(doen)
-                // normale
-                // anonieme
-                // arrowfunction
-                // ik moet van de string een array met split("\n")
-                // daarna moet ik random het getal 0 1 2 3 door Math.random() * 4 te doen
-                // met Math.floor() maak ik er een heel getal van voor het array
-                // de string uit het array moet ik toewijzen aan de dom
-            }
-
-            function etenverwerken(eetlijstje){
-                console.log(1)
-                globaalding = eetlijstje;
-                ochzoveelvanplan(globaalding)
-                // console.log(eetlijstje);
-                // let eetlijst = eetlijstje.split("\n");
-                // console.log(eetlijst);
-                // let random = Math.floor(   Math.random() * eetlijst.length   );
-                // console.log(random);
-                // // hier
-                // document.getElementById("teeten").innerHTML = eetlijst[random];
-
-            }
-
-            function ochzoveelvanplan(go){
-                console.log(go)
-            }
-            function doen(e){
-                console.log(e);
+                let checkit = fetch("gerechten.txt");
+                console.log(checkit);
             }
         </script>
     </head>
