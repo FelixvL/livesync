@@ -19,6 +19,20 @@
     function hijdoethet(){
         alert("hij doet het");
     }
+
+    function vermenigvuldigen(){
+        console.log("2 keer 3 = 6")
+    }
+    function delen(){
+        console.log("2 gedeeld door 3 = 0.66");
+    }
+
+    function uitvoeren(watgaanwedoen){
+        console.log("we zijn in uitvoeren");
+        watgaanwedoen();
+    }
+    uitvoeren(vermenigvuldigen);
+    uitvoeren(delen);
 </script>
 
 <button id="knopA" onclick="geefaanb(this)">Doet iets</button>
