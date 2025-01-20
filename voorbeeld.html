@@ -36,7 +36,11 @@
     function slaop(){
         localStorage.setItem('naam',getal);
     }
+    function laden(){
+        getal = localStorage.getItem('naam');
+    }
 </script>
 <button onclick="telop()">optellen</button>
 <button onclick="slaop()">slaop</button>
+<button onclick="laden()">laden</button>
 <div id="uitslag"></div>
