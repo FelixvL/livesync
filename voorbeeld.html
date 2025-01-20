@@ -31,9 +31,12 @@
     function telop(){
         document.getElementById("uitslag").innerHTML = getal;
         getal++;
-        
-    }
 
+    }
+    function slaop(){
+        localStorage.setItem('naam',getal);
+    }
 </script>
 <button onclick="telop()">optellen</button>
+<button onclick="slaop()">slaop</button>
 <div id="uitslag"></div>
