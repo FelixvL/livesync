@@ -1,39 +1,9 @@
 <script>
-    function geefaanb(elem){
-        console.log("werkt");
-        //typen
-        let knopTwee = document.getElementById("knopB");
-        knopTwee.addEventListener('click', hijdoethet); // function pointer
-
-        let knopDrie = document.createElement("button");
-        knopDrie.innerHTML = "klik hier";
-        knopDrie.addEventListener('mouseover', hijdoethet);
-        document.body.appendChild(knopDrie);
-
-        let alledivs = document.getElementsByTagName("div");
-        for(let x =0 ; x< alledivs.length ; x++){
-            alledivs[x].addEventListener('click', hijdoethet);
-        }
-        
-    }
-    function hijdoethet(){
-        alert("hij doet het");
-    }
-
-    function vermenigvuldigen(){
-        console.log("2 keer 3 = 6")
-    }
-    function delen(){
-        console.log("2 gedeeld door 3 = 0.66");
-    }
-
-    function uitvoeren(watgaanwedoen){
-        console.log("we zijn in uitvoeren");
-        watgaanwedoen();
-    }
-    uitvoeren(delen);
-    uitvoeren(hijdoethet);
-    uitvoeren(() => console.log("helemaalvanalles"))
+    let ditisjson = `{
+                "voornaam": "felix", 
+                "achternaam":   "van loenen", 
+                "hobbies":  ["eten","voetbal","wandelen"]}`
+    console.log(ditisjson.voornaam);
 </script>
 
 <button id="knopA" onclick="geefaanb(this)">Doet iets</button>
