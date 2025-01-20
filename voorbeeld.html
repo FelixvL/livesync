@@ -28,6 +28,7 @@
     let mijnjson = JSON.stringify(mijnobject);
     console.log(mijnjson)
     let getal = 0;
+    let lijstje = [3,4,5,7];
     function telop(){
         getal++;
         document.getElementById("uitslag").innerHTML = getal;
@@ -38,6 +39,13 @@
     }
     function laden(){
         getal = localStorage.getItem('naam');
+    }
+    function slaop(){
+        localStorage.setItem('lijst',lijstje);
+    }
+    function laden(){
+        lijstje = localStorage.getItem('lijst');
+        alert(lijstje[3])
     }
 </script>
 <button onclick="telop()">optellen</button>
