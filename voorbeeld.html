@@ -1,8 +1,11 @@
 <script>
     // Regular Expressions
     // Try Catch
-    let stuktekst = document.getElementById("mijninvoer").value;
-    document.getElementById("uitkomst").innerHTML = stuktekst + stuktekst; 
+    function doedit(){
+        let stuktekst = document.getElementById("mijninvoer").value;
+        document.getElementById("uitkomst").innerHTML = stuktekst + stuktekst; 
+    }
 </script>
 <input id="mijninvoer">
+<button onclick="doedit()">doen</button>
 <div id="uitkomst"></div>
