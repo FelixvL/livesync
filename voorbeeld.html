@@ -1,14 +1,15 @@
 <script>
-    function geefaanb(){
+    function geefaanb(elem){
         console.log("werkt");
         //typen
         let knopTwee = document.getElementById("knopB");
         knopTwee.addEventListener('click', hijdoethet); // function pointer
+        elem.click = "";
     }
     function hijdoethet(){
         alert("hij doet het");
     }
 </script>
 
-<button id="knopA" onclick="geefaanb()">Doet iets</button>
+<button id="knopA" onclick="geefaanb(this)">Doet iets</button>
 <button id="knopB">Doet niks</button>
