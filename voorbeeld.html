@@ -9,6 +9,7 @@
         <script src="./bronbestanden/anderscript.js"></script>
         <link href="./bronbestanden/mijnstyle.css" rel="stylesheet">
         <script>
+            let globaalding;
             function hallo(){
                 console.log("letsgo");
                 var stuktekst = "hoppakee";
@@ -42,6 +43,7 @@
                 fetch("gerechten.txt")
                 .then( e => e.text() )
                 .then( f => etenverwerken(f))
+                console.log(globaalding);
 //                .then( function (e){ console.log(e);})
   //              .then(doen)
                 // normale
@@ -54,13 +56,14 @@
             }
 
             function etenverwerken(eetlijstje){
-                console.log(eetlijstje);
-                let eetlijst = eetlijstje.split("\n");
-                console.log(eetlijst);
-                let random = Math.floor(   Math.random() * eetlijst.length   );
-                console.log(random);
-                // hier
-                document.getElementById("teeten").innerHTML = eetlijst[random];
+                globaalding = eetlijstje;
+                // console.log(eetlijstje);
+                // let eetlijst = eetlijstje.split("\n");
+                // console.log(eetlijst);
+                // let random = Math.floor(   Math.random() * eetlijst.length   );
+                // console.log(random);
+                // // hier
+                // document.getElementById("teeten").innerHTML = eetlijst[random];
 
             }
 
