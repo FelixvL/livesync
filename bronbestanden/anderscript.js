@@ -1,1 +1,1 @@
-alert("iets anders!!!!!!!")
+console.log("iets anders!!!!!!!")
