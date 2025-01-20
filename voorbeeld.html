@@ -60,7 +60,7 @@
                 let random = Math.floor(   Math.random() * eetlijst.length   );
                 console.log(random);
                 // hier
-
+                document.getElementById("teeten").innerHTML = eetlijst[random];
 
             }
 
@@ -73,5 +73,6 @@
         <input>
         <button onclick="hallo()">Klik hier</button>
         <div id="zelfkiezen">x</div>
+        <div id="teeten">e</div>
     </body>
 </html>
