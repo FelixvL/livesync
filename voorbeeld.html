@@ -10,12 +10,24 @@
         <link href="./bronbestanden/mijnstyle.css" rel="stylesheet">
         <script>
             function hallo(){
+                fietsKopen();
+                fietsKopen().trappen();
+
+                let fiets = fietsKopen();
+                fiets.trappen();
+
+                fetch("gerechten.txt").then();
                 let checkit = fetch("gerechten.txt");
                 console.log(checkit);
                 checkit.then(console.log("hier"));
+                            // aanroep call --> datgeen dat hij returned
                 let terug = doen(99);
                 console.log(terug)
                 doen(66);
+                let p = new Promise((resolve, reject) => {
+                    resolve("ga dit doen");
+                })
+                p.then(a => console.log(a))
             }
 
 
