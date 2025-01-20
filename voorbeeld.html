@@ -41,7 +41,7 @@
         getal = localStorage.getItem('naam');
     }
     function slaopa(){
-        localStorage.setItem('lijst',lijstje);
+        localStorage.setItem('lijst',JSON.stringify(lijstje));
     }
     function ladena(){
         lijstje = localStorage.getItem('lijst');
