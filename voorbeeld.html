@@ -32,9 +32,23 @@
                 mijndiv.style.backgroundColor = "green";
                 mijndiv.innerHTML = stuktekst + "??";
                 document.body.appendChild(mijndiv);
-
-
+                    // taken 2mensen   tuin maaien afwassen
+                    // asynchroon    piet grasmaaien tijdens jan afwassen {klaar lengte langste taak}
+                    //  synchroon      piet grasmaain klaar is daarna ja afwassen {klaar lengte taken bij elkaar opgeteld}
+                    // 2 mensen 2 cores 2 computers
+                    // callback meegeven de taak als je klaar bent met je eerstre taak
+                // asynchroon - tegelijkertijd
+                // synchroon tot nu toe gedaan hebt , normaal - achter elkaar na elkaar
                 fetch("gerechten.txt")
+                .then( e => console.log(e))
+ //               .then( function (e){ console.log(e);})
+//                .then(doen)
+                // normale
+                // anonieme
+                // arrowfunction
+            }
+            function doen(e){
+                console.log(e);
             }
         </script>
     </head>
