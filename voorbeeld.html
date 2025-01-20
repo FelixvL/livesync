@@ -40,7 +40,8 @@
                 // asynchroon - tegelijkertijd
                 // synchroon tot nu toe gedaan hebt , normaal - achter elkaar na elkaar
                 fetch("gerechten.txt")
-                .then( e => console.log(e))
+                .then( e => e.text() )
+                .then( f => console.log(f))
 //                .then( function (e){ console.log(e);})
   //              .then(doen)
                 // normale
