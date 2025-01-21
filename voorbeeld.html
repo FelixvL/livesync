@@ -5,10 +5,11 @@
 		document.getElementById("uitvoer").innerHTML = teller;
 	}
     function slaop(){
-        localStorage.setItem('helemaalzelfkiezer',teller);
+        localStorage.setItem('helemaalzelfkiezer',JSON.stringify(teller));
     }
     function laden(){
         teller = localStorage.getItem('helemaalzelfkiezer');
+        teller = JSON.parse(teller);
         document.getElementById("uitvoer").innerHTML = teller[1];
     }
 </script>
