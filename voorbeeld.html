@@ -1,7 +1,7 @@
 <script>
-	let teller = 0;
+	let teller = [0,0,0,0,0];
 	function telop(){
-		teller++;
+		teller[1]++;
 		document.getElementById("uitvoer").innerHTML = teller;
 	}
     function slaop(){
@@ -9,7 +9,7 @@
     }
     window.onload = function(){
         teller = localStorage.getItem('helemaalzelfkiezer');
-        document.getElementById("uitvoer").innerHTML = teller;
+        document.getElementById("uitvoer").innerHTML = teller[1];
     }
 </script>
 LocalStorage
