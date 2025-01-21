@@ -4,7 +4,11 @@
 		teller++;
 		document.getElementById("uitvoer").innerHTML = teller;
 	}
+    function slaop(){
+        localStorage.setItem('helemaalzelfkiezer',teller);
+    }
 </script>
 LocalStorage
 <input type="button" onclick="telop()" value="Klik hier">
+<input type="button" onclick="slaop()" value="SlaOp">
 <div id="uitvoer"></div>
