@@ -7,14 +7,9 @@
     function slaop(){
         localStorage.setItem('helemaalzelfkiezer',teller);
     }
-    window.onload = a();
-
-    function a(){
-        alert("dit is a")
-        return b;
-    }
-    function b(){
-        alert("dit is b")
+    window.onload = function(){
+        teller = localStorage.getItem('helemaalzelfkiezer');
+        document.getElementById("uitvoer").innerHTML = teller;
     }
 </script>
 LocalStorage
