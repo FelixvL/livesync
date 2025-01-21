@@ -19,7 +19,7 @@
         let defiets = {
             brand:"batavus",
             fietsen:function(){
-                console.log("fietsen");
+                document.getElementById("fietsen").innerHTML = brand;
             }
         }
         console.log(defiets.brand);
@@ -29,6 +29,7 @@
 
 
 </script>
+<h1 id="fietsen"></h1>
 
 <input type="button" onclick="uitproberen()" value="Klik hier">
 
