@@ -1,20 +1,33 @@
 <script>
-	let teller = [0,0,0,0,0];
-	function telop(){
-		teller[1]++;
-		document.getElementById("uitvoer").innerHTML = teller[1];
-	}
-    function slaop(){
-        localStorage.setItem('helemaalzelfkiezer',JSON.stringify(teller));
+    function uitproberen(){
+        let ditismijnobject = {};
+        ditismijnobject.ditismijnkenmerk = 15;
+        ditismijnobject.ditismijnkenmerk2 = "maandag";
+        console.log(ditismijnobject);
+
     }
-    function laden(){
-        teller = localStorage.getItem('helemaalzelfkiezer');
-        teller = JSON.parse(teller);
-        document.getElementById("uitvoer").innerHTML = teller[1];
-    }
+
+
 </script>
-LocalStorage
-<input type="button" onclick="telop()" value="Klik hier">
-<input type="button" onclick="slaop()" value="SlaOp">
-<input type="button" onclick="laden()" value="laden">
-<div id="uitvoer">0</div>
+
+<input type="button" onclick="uitproberen()" value="Klik hier">
+
+
+OOP de succesvolle manier van programmeurs
+
+om de wereld zoals wij mensen die waarnemen
+
+om te zetten in broncode
+
+
+class   cakevorm ovenschaal bouwtekening   mal    kenmerk
+object  cakeje   lasagna    gebouw         uitgietsel    waarden van kenmerken
+
+is-a
+has-a
+
+
+een mens heeft het (kenmerk) dat hij een voornaam heeft - alle leden
+dat mens heeft het (waarde van een kenmerk) dat hij mark heet - 1 lid
+
+
