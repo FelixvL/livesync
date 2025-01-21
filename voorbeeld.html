@@ -1,8 +1,8 @@
 <script>
-	let teller = 0;
+	let teller = [0,0,0,0,0];
 	function telop(){
-		teller++;
-		document.getElementById("uitvoer").innerHTML = teller;
+		teller[1]++;
+		document.getElementById("uitvoer").innerHTML = teller[1];
 	}
     function slaop(){
         localStorage.setItem('helemaalzelfkiezer',teller);
