@@ -2,7 +2,7 @@
 	let teller = [0,0,0,0,0];
 	function telop(){
 		teller[1]++;
-		document.getElementById("uitvoer").innerHTML = teller;
+		document.getElementById("uitvoer").innerHTML = teller[1];
 	}
     function slaop(){
         localStorage.setItem('helemaalzelfkiezer',JSON.stringify(teller));
