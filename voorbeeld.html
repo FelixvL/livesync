@@ -1,19 +1,10 @@
 <script>
-    // Regular Expressions
-    // Try Catch
-    function doedit(){
-        let stuktekst = document.getElementById("mijninvoer").value;
-        stuktekst = parseInt(stuktekst);
-        try{
-            document.getElementById("uitkomst"+stuktekst).innerHTML = "vijfenzestig"; 
-            vervolg();
-        }catch(exception){
-            console.log("er is iets mis gegaan");
-            document.getElementById("uitkomst1").innerHTML = "dit nummer moet 1 of 2"
-        }
-    }
+	let teller;
+	function telop(){
+		teller++;
+		document.getElementById("uitvoer").innerHTML = teller;
+	}
 </script>
-<input id="mijninvoer">
-<button onclick="doedit()">doen</button>
-<div id="uitkomst1"></div>
-<div id="uitkomst2"></div>
+LocalStorage
+<input type="button" onclick="telop()">
+<div id="uitvoer"></div>
