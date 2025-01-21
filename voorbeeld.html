@@ -1,15 +1,15 @@
 <script>
-	let teller = [0,0,0,0,0];
+	let teller = 0;
 	function telop(){
-		teller[1]++;
-		document.getElementById("uitvoer").innerHTML = teller[1];
+		teller++;
+		document.getElementById("uitvoer").innerHTML = teller;
 	}
     function slaop(){
         localStorage.setItem('helemaalzelfkiezer',teller);
     }
     function laden(){
         teller = localStorage.getItem('helemaalzelfkiezer');
-        document.getElementById("uitvoer").innerHTML = teller[1];
+        document.getElementById("uitvoer").innerHTML = teller;
     }
 </script>
 LocalStorage
