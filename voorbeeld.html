@@ -7,7 +7,7 @@
     function slaop(){
         localStorage.setItem('helemaalzelfkiezer',teller);
     }
-    function laden(){
+    window.onload = function(){
         teller = localStorage.getItem('helemaalzelfkiezer');
         document.getElementById("uitvoer").innerHTML = teller;
     }
@@ -15,5 +15,4 @@
 LocalStorage
 <input type="button" onclick="telop()" value="Klik hier">
 <input type="button" onclick="slaop()" value="SlaOp">
-<input type="button" onclick="laden()" value="Laden">
 <div id="uitvoer">0</div>
