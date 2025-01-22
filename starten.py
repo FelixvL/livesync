@@ -31,7 +31,7 @@ class Auto:
 	def rijden(_self):
 		print("ik ben aan het rijden met de snelheid: ", _self.snelheid)
 		print("ik rij in het: ", _self.kleur)
-		print(wielen[1])
+		print(_self.wielen[1])
 
 auto1 = Auto("blauw")
 auto2 = Auto("rood")
