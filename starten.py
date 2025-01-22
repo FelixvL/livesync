@@ -34,3 +34,4 @@ auto6 = Auto()
 auto2.kleur = "rood"
 
 print(auto2.kleur)
+print(auto1.kleur)
