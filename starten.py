@@ -24,7 +24,7 @@ print("hij doet het")
 class Auto:
 	kleur = "ntb"
 	snelheid = 8
-	def rijden(_self):
+	def rijden(qqlq):
 		print("ik ben aan het rijden")
 
 auto1 = Auto()
