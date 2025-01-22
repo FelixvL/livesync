@@ -14,3 +14,5 @@ uitkomst = uitvoeren(12, 55)
 print(uitkomst)
 print( uitvoeren(4,6) )
 print("go")
+
+pandas.read_csv("pokedex.csv")
