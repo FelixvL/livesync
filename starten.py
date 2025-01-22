@@ -1,4 +1,6 @@
+import pandas
 
+# reference guide    api   docs documentation    -  bibliotheek
 	       # parameter
 def uitvoeren(getal, tweede):
 	print("letsgo", getal)
