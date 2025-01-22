@@ -24,18 +24,20 @@ print("hij doet het")
 class Auto:
 	kleur = "ntb"
 	snelheid = 8
+	def __init__(_self, dekleur):
+		_self.kleur = dekleur
 	def rijden(_self):
 		print("ik ben aan het rijden met de snelheid: ", _self.snelheid)
+		print("ik rij in het: ", _self.kleur)
 
-auto1 = Auto()
-auto2 = Auto()
-auto3 = Auto()
-auto4 = Auto()
-auto5 = Auto()
-auto6 = Auto()
+auto1 = Auto("blauw")
+auto2 = Auto("rood")
+auto3 = Auto("zwart")
 
 auto2.kleur = "rood"
+auto1.rijden()
 auto2.rijden()
+auto3.rijden()
 print(auto2.kleur)
 print(auto2.snelheid)
 
