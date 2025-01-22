@@ -1,5 +1,5 @@
 import pandas
-
+import json
 # reference guide    api   docs documentation    -  bibliotheek
 	       # parameter
 def uitvoeren(getal, tweede):
@@ -18,5 +18,5 @@ print("go")
 document = pandas.read_csv("pokedex.csv", sep=";")
 print(document)
 zoekterm = input("wat is je favoriete pokemon")
-for pok in document["NAME"]:
-	print(pok)
+for pok in document["TYPE"]:
+	json.loads(pok)
