@@ -26,6 +26,7 @@ class Auto:
 	snelheid = 8
 	def __init__(_self, dekleur):
 		_self.kleur = dekleur
+		
 	def rijden(_self):
 		print("ik ben aan het rijden met de snelheid: ", _self.snelheid)
 		print("ik rij in het: ", _self.kleur)
