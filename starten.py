@@ -24,4 +24,4 @@ print("hij doet het")
 class Auto:
 	kleur = "ntb"
 
-
+auto1 = Auto()
