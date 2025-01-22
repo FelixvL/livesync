@@ -32,6 +32,9 @@ class Auto:
 		print("ik ben aan het rijden met de snelheid: ", _self.snelheid)
 		print("ik rij in het: ", _self.kleur)
 		print(_self.wielen[1])
+	
+	def versnellen(_self, extrasneller):
+		_self.snelheid = _self.snelheid + extrasneller
 
 auto1 = Auto("blauw")
 auto2 = Auto("rood")
@@ -45,3 +48,10 @@ print(auto2.kleur)
 print(auto2.snelheid)
 
 print(auto1.kleur)
+auto3.rijden()
+auto3.versnellen(10)
+auto3.rijden()
+auto3.versnellen(35)
+auto3.rijden()
+auto3.versnellen(70)
+auto3.rijden()
