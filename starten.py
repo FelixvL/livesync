@@ -24,12 +24,14 @@ print("hij doet het")
 class Auto:
 	kleur = "ntb"
 	snelheid = 8
+	wielen = ["linkervoorwiel","linkerachterwiel","rechtervoorwiel","rechterachterwiel"]
 	def __init__(_self, dekleur):
 		_self.kleur = dekleur
-		
+
 	def rijden(_self):
 		print("ik ben aan het rijden met de snelheid: ", _self.snelheid)
 		print("ik rij in het: ", _self.kleur)
+		print(wielen[1])
 
 auto1 = Auto("blauw")
 auto2 = Auto("rood")
