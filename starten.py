@@ -30,3 +30,7 @@ auto3 = Auto()
 auto4 = Auto()
 auto5 = Auto()
 auto6 = Auto()
+
+auto2.kleur = "rood"
+
+print(auto2.kleur)
