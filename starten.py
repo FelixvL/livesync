@@ -23,6 +23,7 @@ print("hij doet het")
 
 class Auto:
 	kleur = "ntb"
+	snelheid = 8
 
 auto1 = Auto()
 auto2 = Auto()
@@ -34,4 +35,6 @@ auto6 = Auto()
 auto2.kleur = "rood"
 
 print(auto2.kleur)
+print(auto2.snelheid)
+
 print(auto1.kleur)
