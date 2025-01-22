@@ -15,5 +15,5 @@ print(uitkomst)
 print( uitvoeren(4,6) )
 print("go")
 
-document = pandas.read_csv("pokedex.csv")
+document = pandas.read_csv("pokedex.csv", sep=";")
 print(document)
