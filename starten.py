@@ -17,3 +17,4 @@ print("go")
 
 document = pandas.read_csv("pokedex.csv", sep=";")
 print(document)
+for pok in document["NAME"]
