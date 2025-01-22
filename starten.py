@@ -25,8 +25,8 @@ class Auto:
 	kleur = "ntb"
 
 auto1 = Auto()
-auto1 = Auto()
-auto1 = Auto()
-auto1 = Auto()
-auto1 = Auto()
-auto1 = Auto()
+auto2 = Auto()
+auto3 = Auto()
+auto4 = Auto()
+auto5 = Auto()
+auto6 = Auto()
