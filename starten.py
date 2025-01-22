@@ -35,7 +35,7 @@ auto5 = Auto()
 auto6 = Auto()
 
 auto2.kleur = "rood"
-auto.rijden()
+auto2.rijden()
 print(auto2.kleur)
 print(auto2.snelheid)
 
