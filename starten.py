@@ -1,5 +1,5 @@
 import requests
-
+# pip install requests
 url = "https://catfact.ninja/fact"
 
 # Doe de API-aanroep
