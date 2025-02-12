@@ -5,3 +5,7 @@ geheim.py
 *.png
 *.jpg
 *.csv
+*.pth
+*.pkl
+*.h5
+data/**
